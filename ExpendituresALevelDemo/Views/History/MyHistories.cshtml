@@ -1,0 +1,24 @@
+﻿@using ExpendituresALevelDemo.Models.History;
+@model HistoryViewModel
+
+@{
+    ViewBag.Title = "MyHistories";
+}
+
+
+<h2>I am on history views</h2>
+</p>
+<h3>@Model.Id</h3>
+
+<h3>@Model.Name</h3>
+
+<h3>@Model.CreateDate</h3>
+</p>
+@if (string.IsNullOrEmpty(Model.Name))
+{
+    <h1>This title is not empty</h1>
+}
+else
+{
+    <h1>This title is empty</h1>
+}
